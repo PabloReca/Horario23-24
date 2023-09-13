@@ -1,0 +1,158 @@
+/* Basic Resets and Root Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Layout Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black !important;
+    color: white;
+}
+
+h1 {
+    margin: 0 0 2rem;
+    text-align: center;
+
+}
+
+/* Main Component Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.8);
+}
+
+/* Table Layout Styles */
+#table1, #table2 {
+    display: flex;
+    flex-direction: row;
+    border-color: white !important;
+}
+
+#table1{
+    margin-bottom: 2rem;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid;
+}
+
+.times {
+    border-bottom: 2px solid;
+    margin-top: 2px;
+}
+
+/* Cell Styling */
+.day > div, .times > div {
+    height: 1.5rem;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+}
+
+.day > div {
+    width: 5rem;
+}
+
+.times > div {
+    width: 6rem;
+}
+
+/* Border & Color Adjustments */
+.times div:not(:first-child) {
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+
+.day div:not(:first-child), .day div:not(:last-child) {
+    border-top: 2px solid;
+    border-right: 2px solid;
+}
+
+.day:first-child {
+    border-left: 2px solid;
+}
+
+#corner1 {
+    color: transparent;
+}
+
+#corner2 {
+
+}
+
+#table2 > div.times > div:nth-child(1){
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    margin-top: -2px;
+}
+
+
+/* Estilos para iPad en modo retrato */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    main {
+        transform: scale(1.1); /* o cualquier valor que prefieras */
+    }
+}
+
+
+/* Estilos para MacBook Pro */
+@media screen and (min-width: 1280px) {
+    main {
+        transform: scale(1.2); /* o cualquier valor que prefieras */
+    }
+}
+
+
+#table1 > div.week > div:nth-child(1) > div:nth-child(1),
+#table1 > div.week > div:nth-child(2) > div:nth-child(1),
+#table1 > div.week > div:nth-child(3) > div:nth-child(1),
+#table1 > div.week > div:nth-child(4) > div:nth-child(1),
+#table1 > div.week > div:nth-child(5) > div:nth-child(1) {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#table1 > div.times > div:nth-child(5),
+#table1 > div.week > div:nth-child(1) > div:nth-child(5),
+#table1 > div.week > div:nth-child(2) > div:nth-child(5),
+#table1 > div.week > div:nth-child(3) > div:nth-child(5),
+#table1 > div.week > div:nth-child(4) > div:nth-child(5),
+#table1 > div.week > div:nth-child(5) > div:nth-child(5),
+#table1 > div.times > div:nth-child(7),
+#table1 > div.week > div:nth-child(1) > div:nth-child(7),
+#table1 > div.week > div:nth-child(2) > div:nth-child(7),
+#table1 > div.week > div:nth-child(3) > div:nth-child(7),
+#table1 > div.week > div:nth-child(4) > div:nth-child(7),
+#table1 > div.week > div:nth-child(5) > div:nth-child(7) {
+    border-top: 2px solid red;
+
+}
+
+
+#table1 > div.week > div:nth-child(1) > div:nth-child(2),
+#table1 > div.week > div:nth-child(2) > div:nth-child(2),
+#table1 > div.week > div:nth-child(3) > div:nth-child(2),
+#table1 > div.week > div:nth-child(4) > div:nth-child(2),
+#table1 > div.week > div:nth-child(5) > div:nth-child(2) {
+    border-top: 2px solid cornflowerblue;
+}
+
+
+#table1 > div.times > div:nth-child(9),
+#table1 > div.week > div:nth-child(1) > div:nth-child(9){
+margin-top: 2rem;
+}
