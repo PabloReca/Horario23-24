@@ -40,7 +40,7 @@ main {
     border-color: white !important;
 }
 
-#table1{
+#table1 {
     margin-bottom: 2rem;
 }
 
@@ -90,11 +90,12 @@ main {
     color: transparent;
 }
 
-#corner2 {
-
+#now {
+    color: yellow;
+    border-color: white;
 }
 
-#table2 > div.times > div:nth-child(1){
+#table2 > div.times > div:nth-child(1) {
     border-left: 2px solid white;
     border-top: 2px solid white;
     margin-top: -2px;
@@ -153,6 +154,6 @@ main {
 
 
 #table1 > div.times > div:nth-child(9),
-#table1 > div.week > div:nth-child(1) > div:nth-child(9){
-margin-top: 2rem;
+#table1 > div.week > div:nth-child(1) > div:nth-child(9) {
+    margin-top: 2rem;
 }
